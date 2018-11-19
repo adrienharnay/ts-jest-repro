@@ -25,7 +25,7 @@
     "typescript": "3.1.6"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --projects .",
     "ci": "yarn ci:test",
     "ci:test": "cross-env CI=true yarn test --ci --coverage --expand --forceExit --detectOpenHandles"
   }
