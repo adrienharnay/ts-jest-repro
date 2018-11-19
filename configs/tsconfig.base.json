@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noEmit": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

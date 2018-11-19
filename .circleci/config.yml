@@ -1,0 +1,26 @@
+tests: &tests
+  working_directory: ~/code
+  docker:
+    - image: circleci/node:10.11
+
+version: 2
+jobs:
+  tests:
+    <<: *tests
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: yarn --pure-lockfile
+
+      - run:
+          name: Run Jest
+          command: |
+            yarn ci
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - tests
