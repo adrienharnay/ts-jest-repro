@@ -21,6 +21,7 @@ module.exports = {
   roots: [__dirname],
   testRegex: '\\.test\\.(j|t)s$',
   transform: {
+    '^.+\\.js$': path.join(__dirname, './configs/jestPreprocess.js'),
     '^.+\\.ts$': 'ts-jest',
   },
   transformIgnorePatterns: ['/node_modules/'],

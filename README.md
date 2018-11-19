@@ -5,5 +5,6 @@
 ## How to reproduce
 
 1. `yarn`
-2. `yarn test` => it works in local
-3. `yarn ci` => also wors in local
+2. `yarn test` => works in local
+3. `yarn ci` => also works in local
+4. Go to [CircleCI]() and notice the tests never finish
